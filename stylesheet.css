@@ -1,0 +1,41 @@
+.head{
+    width=100%;
+    background-color: #ffeb3b;
+    height: 100px;
+    margin-top: -35px;;
+}
+
+h1 {
+     font-family: Helvetica;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+form {
+    position: fixed;
+    margin-left: 300px;
+    margin-top: 200px;
+    font-family: Helvetica;
+    font-size: 25px;
+    color: dimgray;
+}
+
+#user-input {
+    font-family: Helvetica;
+    font-size: 50px;
+    width:200px;
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+}
+
+ul {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: black;
+    margin-left: 700px;
+    margin-top: 50px;
+    }    
+        

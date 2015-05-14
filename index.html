@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<title>Ping Pong</title>
+
+<body>
+    
+    <script>$(document).ready(function(){
+  $("form").submit(function(event){
+    var num = $('#user-input').val()
+
+    for (var i = 1; i <= num; i++) {
+      if (i%3 === 0 && i%5 === 0) {
+        $('#nums').append('<li>'+"PING-PONG"+'</li>');}
+      else if (i % 3 === 0) {
+        $('#nums').append('<li>'+"PING"+'</li>');}
+      else if (i % 5 === 0) {
+        $('#nums').append('<li>'+"PONG"+'</li>');}
+      else{
+        $('#nums').append('<li>'+i+'</li>');}
+
+    };
+
+  event.preventDefault();
+  
+  });
+});</script>
+    
+    <div class="head">
+        <h1>PING-PONG!</h1> 
+    </div>
+    
+    
+  <form>
+      Pass a number <br>
+    <input type="number" name="user-input" id="user-input">
+    <input type="submit" id="button" value="Go!">
+  </form> 
+
+    <div id="result">
+  <ul id="nums"></ul>
+    </div>
+    
+</body>
+
+<html>
